@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Re-encarnation Form</title>
+    <link rel="stylesheet" href="survey.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Alice&family=Berkshire+Swash&family=Delius&family=EB+Garamond&family=Fredericka+the+Great&family=Great+Vibes&family=Henny+Penny&family=Homemade+Apple&family=IBM+Plex+Serif&family=IM+Fell+English+SC&family=Lemonada&family=Macondo&family=Old+Standard+TT:ital@0;1&family=Pinyon+Script&family=Rubik+Marker+Hatch&family=Rubik+Microbe&family=Satisfy&family=Tangerine&family=Titillium+Web&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<!-- PROBLEMAS: 
+01. El botón submit no se puede apretar bien.
+02. No se ve el placeholder del textarea. -->
+
+
+<body>
+    <h1 id="title">Re-encarnation Form</h1>
+    <p id="description">Verify your position within the underworld rank. Scores lower than 60
+        points will be incinerated and not fit for re-encarnation on Earth.</p>
+
+
+
+    <!-- BASIC INFORMATION -->
+
+    <form action="" id="survey-form">
+        <div class="canvas">
+            <div class="first">
+                <fieldset>
+
+                    <label class="line" for="name" id="name-label">Name: <input type="text" id="name"
+                            placeholder="Creature name" required /></label>
+
+                    <label class="line" for="email" id="email-label">Email: <input class="line" type="email" id="email"
+                            placeholder="Underworld Address" required /></label>
+
+                    <label class="line" for="number" id="number-label">Journey: <input class="line" type="number"
+                            id="number" min="16" max="666" placeholder="Years spent on Earth" required /></label>
+                </fieldset>
+
+                <img class="thorns" src="Images/Thorn.png" alt="thorns">
+
+                <!-- ABSORBED SOULS RANKING -->
+                <fieldset class="murder">
+                    Choose the range of people you have been successful at torturing:
+                    <label for="dropdown">
+                        <select name="dropdown" id="dropdown" required>
+                            <option value="">Select one</option>
+                            <option value="1">0 - 10</option>
+                            <option value="2">10 - 30</option>
+                            <option value="3">30 - 80</option>
+                            <option value="4">80 - 150</option>
+                            <option value="5">150+</option>
+                        </select>
+                    </label>
+                    <img src="GIPHS/Torture.gif" alt="torture" height="160px">
+                </fieldset>
+            </div>
+            <div class="second">
+
+                <!-- <fieldset>
+                    GENDER
+                    <label for="male"><input class="inline" type="radio" name="gender" id="male"
+                            value="male">Male</label>
+                    <label for="female"><input class="inline" type="radio" name="gender" id="female"
+                            value="female">Female</label>
+                </fieldset>-->
+
+                <fieldset>
+                    <!-- TYPE OF TORTURING -->
+                    Specify the type of torturing you have performed <strong>the most</strong>:
+                    <label for="external"><input class="inline" type="radio" name="torturing" id="external"
+                            value="male">External</label>
+                    <label for="internal"><input class="inline space" type="radio" name="torturing" id="internal"
+                            value="female">Internal</label>
+
+                    <!-- 3 BASIC TASKS -->
+
+                    Check the tasks you have <strong>completed</strong> during your training:
+                    <label for="task01"><input class="inline" type="checkbox" name="task01" value="task01"
+                            id="task01">Rip nails off</label>
+                    <label for="task02"><input class="inline" type="checkbox" name="task02" value="task02"
+                            id="task02">Boil body parts</label>
+                    <label for="task03"><input class="inline" type="checkbox" name="task03" value="task03"
+                            id="task03">Eat organs</label>
+                </fieldset>
+
+                <img class="thorns" src="Images/Thorn.png" alt="thorns">
+
+                <!-- TEXTAREA -->
+                <label for="textarea">
+                    <textarea id="textarea" name="textarea" placeholder="I deserve re-encarnation because..."
+                        required></textarea>
+                </label>
+
+            </div>
+        </div>
+        <div class="submitbackground">
+            <input id="submit" type="submit" value="SUBMIT" />
+        </div>
+    </form>
+</body>
+
+</html>
