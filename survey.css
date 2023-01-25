@@ -1,39 +1,20 @@
-/* font-family: 'Abyssinica SIL', serif;
-font-family: 'Alice', serif;
-font-family: 'Berkshire Swash', cursive;
-font-family: 'Delius', cursive;
-font-family: 'EB Garamond', serif;
-font-family: 'Fredericka the Great', cursive;
-font-family: 'Great Vibes', cursive;
-font-family: 'Henny Penny', cursive;
-font-family: 'Homemade Apple', cursive;
-font-family: 'IBM Plex Serif', serif;
-font-family: 'Lemonada', cursive;
-font-family: 'Macondo', cursive;
-font-family: 'Old Standard TT', serif;
-font-family: 'Pinyon Script', cursive;
-font-family: 'Rubik Marker Hatch', cursive;
-font-family: 'Rubik Microbe', cursive;
-font-family: 'Satisfy', cursive;
-font-family: 'Tangerine', cursive;
-font-family: 'Titillium Web', sans-serif; */
-
 body {
     background-color: rgb(35, 33, 42);
-    background-image: url(Images/Background.jpg);
+    background-image: url(https://www.linkpicture.com/q/Background_8.jpg);
     background-size: cover;
     background-position: center;
     font-size: 13.5px;
     overflow: hidden;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 0.75vw;
 }
 
-h1, p {
-    margin: 10px auto;
+h1,
+p {
+    margin: 1.5vw auto;
     text-align: center;
     color: white;
-    text-shadow: 4px 4px 6px rgba(0,0,0,0.6);
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
 }
 
 h1 {
@@ -42,26 +23,57 @@ h1 {
 
 p {
     font-style: italic;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#title {
+    margin-bottom: 0;
+}
+
+#description {
+    margin-top: 1vw;
+}
+
+.canvas-container {
+    margin: 0 auto;
+    width: 60%;
+    height: 37vw;
+    background-image: url(https://www.linkpicture.com/q/BackgroundFrameLight.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .canvas {
-    margin: 0 auto;
-    width: 65%;
+    width: 80%;
+    height: 60%;
     display: flex;
-    height: 580px;
-    background-image: url(Images/BackgroundFrame.png);
-    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5vw;
 }
 
 .first {
-    padding: 120px 0px 0px 130px;
-    width: 35%;
+    width: 42%;
+    height: 100%;
+    margin: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 
 .second {
-    padding: 120px 0px 00px 0px;
-    width: 40%;
+    width: 42%;
+    height: 100%;
+    margin: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 
 .inline {
@@ -69,35 +81,51 @@ p {
     margin: 0px;
     margin-right: 0.5em;
     vertical-align: middle;
-  }
+}
 
 fieldset {
-    margin: 5px;
+    height: 20%;
     border: none;
+}
+
+.information {
+    height: 25%;
 }
 
 .murder {
     display: flex;
     flex-wrap: wrap;
+    height: 50%;
+}
+
+.torturing {
+    height: 48%;
+}
+
+.torturing label {
+    margin: 0.5vw 0;
 }
 
 label {
     display: block;
-    margin: 0.5rem 0;
+    margin: 0.8vw 0;
 }
 
 .thorns {
     width: 100%;
-    margin: 0;
+    height: 10%;
+    margin: 0.5vw 0;
 }
 
 input {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: italic;
+    height: 1vw;
+    font-size: 0.75vw;
 }
 
 select {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .first input {
@@ -111,28 +139,23 @@ select {
     background-color: brown;
 }
 
-.space {
-    margin-bottom: 10px;
-}
-
 textarea {
-    width: 94%;
-    height: 85px;
-    margin-left: 9px;
+    width: 100%;
+    height: 100%;
     resize: none;
     border: ridge 5px rgb(220, 220, 220);
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: italic;
 }
 
 
 input[type="submit"] {
     display: block;
-    margin: 30px auto;
-    max-width: 80px;
+    margin: 0 auto;
+    max-width: 5vw;
     background-color: transparent;
     border: none;
-    font-size: 12px;
+    font-size: 0.8vw;
     cursor: pointer;
 }
 
@@ -149,9 +172,14 @@ input[type="submit"]:not(:hover) {
 .submitbackground {
     display: flex;
     margin: 0px auto;
-    width: 120px;
-    height: 75px;
-    background-image: url(Images/Submit.png);
+    width: 6vw;
+    height: 4vw;
+    background-image: url(https://www.linkpicture.com/q/Submit_1.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
 }
 
 .submitbackground:hover {
